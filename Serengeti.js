@@ -20,3 +20,15 @@ const Jerry = ("Jerry", 32, "Light Brown");
 console.log(Jerry.furColor);
 
 Jerry.oohOoh();
+
+const rhinocerosFactory = (name, age, hornLength) => {
+  const roar = () => console.log("ROAR!");
+  return {name, age, hornLength, roar};
+}
+
+const Rind = rhinocerosFactory("Rind", 12, "1.3 meters");
+
+console.log(Rind.hornLength);
+console.log(Rind.age);
+
+Rind.roar();
