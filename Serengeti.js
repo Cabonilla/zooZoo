@@ -32,3 +32,15 @@ console.log(Rind.hornLength);
 console.log(Rind.age);
 
 Rind.roar();
+
+const lionFactory = (name, age, maneSize) => {
+  const roar = () => console.log("ROAR!")
+  return {name, age, maneSize, roar};
+} 
+
+const Larry = lionFactory("Larry", 9, "1ft Radius");
+
+console.log(Larry.age);
+console.log(Larry.name);
+
+Larry.roar();
