@@ -44,3 +44,15 @@ console.log(Larry.age);
 console.log(Larry.name);
 
 Larry.roar();
+
+const cheetahFactory = (name, age, spotNumber) => {
+  const growl = () => console.log("GROWL!");
+  return {name, age, spotNumber, growl};
+}
+
+const Chauncy = cheetahFactory("Chauncy", 32, 44);
+
+console.log(Chauncy.name);
+console.log(Chauncy.age);
+
+Chauncy.growl();
