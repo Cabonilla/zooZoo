@@ -56,3 +56,15 @@ console.log(Chauncy.name);
 console.log(Chauncy.age);
 
 Chauncy.growl();
+
+const elephantFactory = (name, age, trunkLength) => {
+  const trumpet = () => console.log("PHVRRRRRRRRRR!");
+  return {name, age, trunkLength, trumpet};
+}
+
+const Perry = elephantFactory("Perry", 12, "23 inches");
+
+console.log(Perry.name);
+console.log(Perry.age);
+
+Perry.trumpet();
