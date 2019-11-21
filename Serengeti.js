@@ -68,3 +68,15 @@ console.log(Perry.name);
 console.log(Perry.age);
 
 Perry.trumpet();
+
+const zebraFactory = (name, age, stripeNumber) => {
+  const neigh = () => console.log("NEIGHHH!");
+  return {name, age, stripeNumber, neigh};
+}
+
+const Jebediah = zebraFactory("Jebediah", 23, 46);
+
+console.log(Jebediah.name);
+console.log(Jebediah.stripeNumber);
+
+Jebediah.neigh();
