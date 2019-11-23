@@ -92,3 +92,15 @@ console.log(Wilfred.name);
 console.log(Wilfred.color);
 
 Wilfred.growl();
+
+const gazelleFactory = (name, age, furColor) => {
+  const meep = () => console.log("MEEP!");
+  return {name, age, furColor, meep};
+}
+
+const Frank = gazelleFactory("Frank", 11, "Light Brown");
+
+console.log(Frank.name);
+console.log(Frank.furColor);
+
+Frank.meep();
