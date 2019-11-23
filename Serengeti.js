@@ -80,3 +80,15 @@ console.log(Jebediah.name);
 console.log(Jebediah.stripeNumber);
 
 Jebediah.neigh();
+
+const wildebeestFactory = (name, age, color) => {
+  const growl = () => console.log("GROOOOOOOWL!");
+  return {name, age, color, growl};
+}
+
+const Wilfred = wildebeestFactory("Wilfred", 13, "Dark Brown");
+
+console.log(Wilfred.name);
+console.log(Wilfred.color);
+
+Wilfred.growl();
