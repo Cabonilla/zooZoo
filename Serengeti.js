@@ -104,3 +104,15 @@ console.log(Frank.name);
 console.log(Frank.furColor);
 
 Frank.meep();
+
+const hyenaFactory = (name, age, spotNumber) => {
+  const laugh = () => console.log("HAHAHAHAHAHAHHAHAHAHHAHAHHAHA!");
+  return {name, age, spotNumber, laugh}
+}
+
+const Hennessy = hyenaFactory("Hennessy", 45, 92);
+
+console.log(Hennessy.name);
+console.log(Hennessy.age);
+
+Hennessy.laugh();
