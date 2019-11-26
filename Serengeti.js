@@ -116,3 +116,15 @@ console.log(Hennessy.name);
 console.log(Hennessy.age);
 
 Hennessy.laugh();
+
+const hippoFactory = (name, age, weight) => {
+  const growl = () => console.log("GRRRRRRRRROWL!");
+  return {name, age, weight, growl};
+}
+
+const Trinity = hippoFactory("Trinity", 23, "4000 Lb.");
+
+console.log(Trinity.age);
+console.log(Trinity.weight);
+
+Trinity.growl();
