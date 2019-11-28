@@ -128,3 +128,15 @@ console.log(Trinity.age);
 console.log(Trinity.weight);
 
 Trinity.growl();
+
+const leopardFactory = (name, age, spotNumber) => {
+  const meow = () => {console.log("MEOW!")}
+  return {name, age, spotNumber, meow}
+}
+
+const Laremy = leopardFactory("Laremy", 2, 13);
+
+console.log(Laremy.age);
+console.log(Laremy.spotNumber);
+
+Laremy.meow();
