@@ -152,3 +152,15 @@ console.log(Nadler.age);
 console.log(Nadler.hornLength);
 
 Nadler.neigh();
+
+const warhogFactory = (name, age, maneThickness) => {
+  const oink = () => console.log("OINK!");
+  return {name, age, maneThickness, oink};
+}
+
+const Salinger = warhogFactory("Salinger", 4, 5);
+
+console.log(Salinger.age);
+console.log(Salinger.maneThickness);
+
+Salinger.oink();
