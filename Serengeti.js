@@ -140,3 +140,15 @@ console.log(Laremy.age);
 console.log(Laremy.spotNumber);
 
 Laremy.meow();
+
+const addaxFactory = (name, age, hornLength) => {
+  const neigh = () => console.log("NEEEEEEEEIGH!");
+  return {name, age, hornLength, neigh};
+}
+
+const Nadler = addaxFactory("Nadler", 34, "24 Inches");
+
+console.log(Nadler.age);
+console.log(Nadler.hornLength);
+
+Nadler.neigh();
