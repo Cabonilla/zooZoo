@@ -164,3 +164,15 @@ console.log(Salinger.age);
 console.log(Salinger.maneThickness);
 
 Salinger.oink();
+
+const spurfowlFactory = (name, age, greyScale) => {
+  const tweet = () => console.log("TWEET TWEET!")
+  return {name, age, greyScale, tweet};
+}
+
+const Reginald = spurfowlFactory("Reginald", 2, "50%");
+
+console.log(Reginald.age);
+console.log(Reginald.greyScale);
+
+Reginald.tweet();
