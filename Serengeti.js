@@ -176,3 +176,15 @@ console.log(Reginald.age);
 console.log(Reginald.greyScale);
 
 Reginald.tweet();
+
+const dungbeetleFactory = (name, age, strengthIndex) => {
+  const eatdung = () => console.log("YUM!");
+  return {name, age, strengthIndex, eatdung};
+}
+
+const Darius = dungbeetleFactory("Darius", 2, "1.7X BW (Body Weight)");
+
+console.log(Darius.name);
+console.log(Darius.strengthIndex);
+
+Darius.eatdung();
