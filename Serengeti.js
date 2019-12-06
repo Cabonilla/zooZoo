@@ -188,3 +188,15 @@ console.log(Darius.name);
 console.log(Darius.strengthIndex);
 
 Darius.eatdung();
+
+const hartebeestFactory = (name, age, hornLength) => {
+  const neigh = () => console.log("NEIGH!");
+  return {name, age, hornLength, neigh};
+}
+
+const Harriet = hartebeestFactory("Harriet", 6, "13 inches");
+
+console.log(Harriet.name);
+console.log(Harriet.hornLength);
+
+Harriet.neigh();
