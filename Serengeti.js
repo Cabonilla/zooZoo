@@ -200,3 +200,16 @@ console.log(Harriet.name);
 console.log(Harriet.hornLength);
 
 Harriet.neigh();
+
+
+const reedbuckFactory = (name, age, hornLength) => {
+  const chew = () => console.log("CHOMP CHOMP CHOMP!");
+  return {name, age, hornLength, chew};
+}
+
+const Red = reedbuckFactory("Red", 3, "6 inches");
+
+console.log(Red.name);
+console.log(Red.hornLength);
+
+Red.chew();
